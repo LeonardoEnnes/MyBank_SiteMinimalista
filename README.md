@@ -20,4 +20,6 @@ This project was developed with these <b> Technologies</b> :
 <h1> 
   <img src="https://ik.imagekit.io/oudvyxa4jwd/Captura_de_Tela__38__0YZ3YF06Z.png"> 
 </h1> 
- Este projeto não está completo ainda, quero realizar a ativação do mesmo com linguagens como por exemplo JS e PHP, Caso queira contribuir de alguma forma fique a vontade.
+
+Este projeto não está completo ainda, Principalmente a parte de responsividade dele. Quero realizar a ativação do mesmo com linguagens como por exemplo JS e PHP, Caso queira contribuir de alguma forma fique a vontade. <br><br> 
+ Tirei de inspiração este seguinte design: https://dribbble.com/shots/14607162-Credit-Card-Landing-Page/attachments/6299594?mode=media
