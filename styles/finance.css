@@ -1,0 +1,163 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: Arial;
+	color: white;
+	background-color:black;
+}
+
+header{
+    height: calc( 56vh - 150px); /*44 */
+}
+
+header nav{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 29px; 
+}
+
+header nav p {	
+	margin-left: 81px;
+    
+}
+
+header nav p a {
+    text-decoration: none;
+    color: white;
+}
+
+#logo{
+	font-size: 38px;
+	font-weight: bold;
+	padding-right: 90px;
+}
+
+header nav ul{
+	padding-left: 415px;
+	list-style: none;
+	display: flex;
+}
+
+header nav ul li{
+	margin: 21px 29px ; 
+	color: white; 
+	font-weight: bold;
+	font-size: 18px;;
+}
+
+li a{
+	text-decoration: none;
+	color: white;
+}
+
+.container{	
+    width: 95vw;
+    height: 100vh; /* diminuir ou aumentar, legitima gambiara feita pelo ennes ;>*/
+    display: flex;
+    flex-direction: column; /* colocado para dar direção ao flex  */
+    justify-content: center;
+    align-items: center;
+}
+
+#title{
+	margin-top: 140px;
+    font-size: 13px;
+	padding-bottom: 38px;
+}
+
+.content{
+	padding: 10px;
+	margin-top: 20px; 
+	width: 61%;
+}
+
+#title-list{
+	font-size: 21px;
+	padding-bottom: 50px;
+}
+
+#content-list{
+	list-style: none;
+	font-size: 19px;
+}
+
+
+ #content-list li{  /*  ajustes da lista */
+	height: 100%;
+	width: 100%;
+	border: solid 1px rgb(0, 0, 0) ;
+	border-left: 0;
+	border-right: 0;
+	background-color: rgb(255, 255, 255);
+	padding: 6px;
+	padding-top: 10px;
+	padding-bottom: 19px;
+	color: black;
+	text-align: left;
+}
+
+ .active, #content-list li:hover{  /* fazendo efeito de passa mouse e trocar de cor */
+	background-color: rgba(219, 214, 219, 0.938);
+} 
+
+
+#content-list li::after{  /* foi usado para colocar a setinham, achar uma forma de fazer a seta abrir mais texto para baixo  */
+	content: url(../img/arrow.jpg);
+	float: right;
+	cursor: pointer;
+}
+
+.video-container{
+	text-align: center;
+}
+ 
+#title-video{
+	font-size: 21px;
+	padding-bottom: 40px;
+	padding-right: 643px;
+}
+
+#text-video{
+	padding-right: 60px;
+	padding-bottom: 40px;
+	font-size: 18px;
+}
+
+#text-content-video{
+	margin-top: 30px;
+	padding-bottom: 20px;
+	font-size: 18px;
+}
+
+#button-content-video{  /* Distanciando botão */
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+#subscribe{              /* Estilização do botão*/
+	color: rgb(0, 0, 0);
+	font-size: 18px;
+	width: 180px;
+	height: 50px;
+	padding: 1px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	background: rgb(255, 255, 255);
+	border: solid 2px rgb(49, 47, 47);
+	border-radius: 50px;
+	outline: none; 
+	cursor: pointer;
+}
+
+#subscribe:hover{
+	background: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	border: solid 3px rgb(255, 255, 255);
+}
+
+				/* Responsividade (Não está completa ainda)*/

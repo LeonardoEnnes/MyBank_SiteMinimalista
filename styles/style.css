@@ -1,0 +1,443 @@
+
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: Arial;
+	color: white;
+	background-color:black;
+}
+
+header{
+    height: calc( 30vh - 150px); 
+}
+
+header nav{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 30px; 
+/*	align-items: center;  coloquei e funcionou, verificar dps*/ 
+}
+
+header nav p {	
+	margin-left: 80px;
+}
+
+#logo{
+	font-size: 38px;
+	font-weight: bold;
+	padding-right: 100px;
+}
+
+header nav ul{
+	padding-left: 420px;
+	list-style: none;
+	display: flex;
+}
+
+header nav ul li{
+	margin: 20px 29px ; 
+	color: white; 
+	font-weight: bold;
+	font-size: 18px;;
+}
+
+li a{
+	text-decoration: none;
+	color: white;
+}
+
+.content{
+	width: 100%;
+	height: 600px;
+}
+
+.content-img{
+	float: right;
+	margin-top: 50px;
+}
+
+#picture{
+	width: 800px;	
+	height: 600px;
+}
+
+.content-text-title{
+	padding-top: 170px;
+	margin-left: 110px;
+}
+
+ span{
+	padding-top: 1500px;
+	font-size: 60px;	
+}
+
+.personal{
+	color: #A4A4A4;
+	font-size: 59px;
+}
+
+.content, p{	
+	font-size: 19px;
+	padding-bottom: 4px ;	
+}
+
+.text{	
+	color: #6E6E6E ;
+}
+
+.button {
+	padding-left: 100px; 	
+	margin-top: 20px;
+}
+
+#apply-now{
+	font-size: 18px;
+	width: 200px;
+	height: 60px;
+	padding: 3px;
+	background: white;
+	border: solid  black;
+	border-radius: 50px;
+	outline: none; 
+}
+
+#apply-now:hover{
+	color: white;
+	cursor: pointer;
+	background: black;
+	border: solid 0.9px white;
+}
+
+
+
+
+
+ 						/* Responsividade (Não está completa ainda)*/
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px ){
+
+	header{
+		height: calc( 30vh - 150px); 
+	}
+	
+	header nav{
+		display: flex;
+		justify-content: space-around;
+		
+		padding-top: 30px; 
+		justify-items: center;
+	    align-items: center; /* coloquei e funcionou, verificar dps*/  
+	}
+	
+	#logo{
+		font-size: 30px;
+		font-weight: bold;
+		padding-right: 50px;
+	}
+	
+	header nav ul{
+		padding-left: 0px;
+		list-style: none;
+		display: flex;
+	}
+	
+	header nav ul li{
+		margin: 20px 25px ; 
+		color: white; 
+		font-weight: bold;
+		font-size: 18px;;
+	}
+	
+	li a{
+		text-decoration: none;
+		color: white;
+	}
+
+	.content-img{
+		float: right;
+		margin-top: 100px;
+	}
+	
+	#picture{
+		width: 500px;	
+		height: 500px;
+	}
+
+	.content-text-title{
+		padding-top: 150px; /* 70 padrão  */
+		margin-left: 110px;
+	}
+
+	span{
+		padding-top: 1500px;
+		font-size: 50px;	
+	}
+	.personal{
+		color: #A4A4A4;
+		font-size: 50px;
+	}
+	
+	.content, p{	
+		font-size: 19px;
+		padding-bottom: 2px ;	
+	}
+	
+}
+
+@media screen and (max-width: 768px ){
+
+	header{
+		height: calc( 30vh - 150px); 
+	}
+	
+	header nav{                  /* Modificação do menu */
+		display: flex;
+		justify-content: space-around;
+		padding-top: 30px; 
+		justify-items: center;
+	    align-items: center; /* coloquei e funcionou, verificar dps*/  
+	}
+	
+	#logo{
+		font-size: 28px;
+		font-weight: bold;
+		padding-right: 50px;
+	}
+	
+	header nav ul{
+		padding-left: 0px;
+		list-style: none;
+		display: flex;
+	}
+	
+	header nav ul li{
+		margin: 20px 20px ; 
+		color: white; 
+		font-weight: bold;
+		font-size: 15px;;
+	}
+	
+	li a{
+		text-decoration: none;
+		color: white;
+	}
+
+	.content-img{
+		float: right;
+		margin-top: 100px;
+	}
+	
+	#picture{
+		width: 400px;	
+		height: 380px;
+	}
+
+	.content-text-title{
+		padding-top: 150px; /* 70 padrão  */
+		margin-left: 50px;
+	}
+
+	span{
+		padding-top: 150px;
+		font-size: 40px;	
+	}
+	.personal{
+		color: #A4A4A4;
+		font-size: 40px;
+	}
+	
+	.content, p{	
+		font-size: 19px;
+		padding-bottom: 2px ;	
+	}
+
+	.button {
+		padding-left: 40px; 	
+		margin-top: 20px;
+	}
+	
+	#apply-now{
+		font-size: 18px;
+		width: 200px;
+		height: 60px;
+		padding: 3px;
+		background: white;
+		border: solid  black;
+		border-radius: 60px;
+		outline: none; 
+	}
+	
+	#apply-now:hover{
+		color: white;
+		cursor: pointer;
+		background: black;
+		border: solid 0.9px white;
+	}
+
+	@media screen and (max-width: 425px ){
+
+		header{
+			height: calc( 39vh - 150px); 
+		}
+		
+		header nav{                  /* Modificação do menu */
+			display: flex;
+			justify-content: space-around;
+			padding-top: 55px; 
+			justify-items: center;
+			align-items: center; /* coloquei e funcionou, verificar dps*/  
+		}
+		
+		#logo{
+			font-size: 20px;
+			font-weight: bold;
+			padding-right: 10px;
+			margin-left: 10px;
+		}
+		
+		header nav ul{
+			padding-left: 0px;
+			list-style: none;
+			display: flex;
+			flex-shrink: 0;  /* Coloquei para deiar o menu reto */
+		}
+		
+		header nav ul li{
+			margin: 20px 15px ; 
+			color: white; 
+			font-weight: bold;
+			font-size: 10px;;
+		}
+		
+		li a{
+			text-decoration: none;
+			color: white;
+		}
+	
+		.content-img{
+		   float: right; 
+			margin-top: 100px;
+		}
+		
+		#picture{
+			width: 250px;	
+			height: 200px;
+		}
+
+		.content-text-title{
+			padding-top: 160px; /* 70 padrão  */
+			margin-left: 20px;
+		}
+
+		span{
+			padding-top: 150px;
+			font-size: 26px;	
+		}
+		.personal{
+			color: #A4A4A4;
+			font-size: 23px;
+		}
+		
+		.content, p{	
+			font-size: 13px;
+			padding-bottom: 1px ;	
+		}
+
+		.button {
+			padding-left: 150px; 	
+			margin-top: 40px;
+		}
+
+		#apply-now{
+			font-size: 15px;
+			width: 120px;
+			height: 40px;
+			padding: 1px;
+			background: white;
+			border: solid  black;
+			border-radius: 60px;
+			outline: none; 
+		}
+	}
+
+	@media screen and (max-width: 375px ){
+
+		header{
+			height: calc( 30vh - 150px); 
+		}
+		
+		header nav ul{
+			padding-left: 0px;
+			list-style: none;
+			display: flex;
+			flex-shrink: 0;  /* Coloquei para deiar o menu reto */
+		}
+		
+		header nav ul li{
+			margin: 20px 10px ; 
+			color: white; 
+			font-weight: bold;
+			font-size: 10px;;
+		}			
+		
+		#picture{
+			width: 220px;	
+			height: 250px;
+		}
+
+		.content-text-title{
+			padding-top: 160px; /* 70 padrão  */
+			margin-left: 10px;
+		}
+
+		span{
+			padding-top: 150px;
+			font-size: 25px;	
+		}
+		
+		.personal{
+			color: #A4A4A4;
+			font-size: 22px;
+		}		
+		
+		.button {
+			padding-left: 120px; 	
+			margin-top: 40px;
+		}
+	}
+
+	@media screen and (max-width: 320px ){
+
+		header nav ul li{
+			margin: 20px 10px ; 
+			color: white; 
+			font-weight: bold;
+			font-size: 9px;;
+		}	
+
+		header{
+			height: calc( 40vh - 200px); 
+		}
+
+		#picture{
+			width: 150px;	
+			height: 200px;
+		}
+
+		.button {
+			padding-left: 100px; 	
+			margin-top: 55px;
+		}
+	}
+}

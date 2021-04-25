@@ -1,0 +1,378 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: Arial;
+	color: white;
+	background-color:black;
+}
+
+header{
+    height: calc( 42vh - 150px); /*44 */
+}
+
+header nav{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 29px; 
+}
+
+header nav p {	
+	margin-left: 81px;
+    
+}
+
+header nav p a {
+    text-decoration: none;
+    color: white;
+}
+
+#logo{
+	font-size: 38px;
+	font-weight: bold;
+	padding-right: 90px;
+}
+
+header nav ul{
+	padding-left: 415px;
+	list-style: none;
+	display: flex;
+}
+
+header nav ul li{
+	margin: 21px 29px ; 
+	color: white; 
+	font-weight: bold;
+	font-size: 18px;;
+}
+
+li a{
+	text-decoration: none;
+	color: white;
+}
+
+/* estilizando formulario */
+
+.content{
+    display: flex;   /* Centralizando no meio o formulario*/
+					                             /* parte 01*/
+    justify-content: left;                       /* era center para o meio, coloquei left para testar... */
+	padding-left: 190px;                         /* separando do canto da tela */
+}
+
+.contact{
+    width: 100%;   /* Dando tamanho para o formulario */
+    max-width: 680px;                        
+}
+
+.top-contact{ /* Usado para dar posição central ao topo e espaçamento do formulario pro topo*/
+	text-align: center; 
+	margin-bottom: 20px;
+}
+
+#title-contact{  /* Detalhes do H1*/
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 29px;
+}
+
+#text-contact{		/* Detalhes do p*/
+	color: #c5c1c1;
+}
+
+.form{
+    display: flex;
+    flex-direction: column; 
+	flex-shrink: 1;
+}
+
+.campo{   /* Estilizando os campos */
+    padding: 7px ;
+    margin-bottom: 20px ;
+    border: 0.5PX solid #ddd ; /* detalhe das bordas do form */
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.campo:nth-child(3){	/* usei para posicionar o campo do telefone no meio e corrigindo certas imperfeições*/
+	margin: auto;
+	margin-bottom: 20px;
+	width: 60%;
+	text-align: center;
+}
+
+label{
+	padding-right: 8px;
+}
+
+input{
+	height: 40px;
+	width: 90%;
+	border: solid 1px;
+	border-radius: 10px;
+	padding-left: 10px; /* distanciado o texto dento dos input */
+}
+
+#number{ /* usado só para dar tamanho ao campo de dentro */
+	width: 70%;
+}
+
+.areatext{
+    height: 130px;
+    width: 100%;
+	padding: 10px;
+	font-size: 17px;
+}
+
+.position-button{	
+	margin:auto;
+	width: 50%; 
+	padding-left: 30px;
+}
+
+.button{
+	margin-bottom: 100px;
+	border: solid 1px;
+	border-radius: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.button:hover{
+	background: black;
+	color: white;
+}
+
+.content-contact{
+	padding-top: 8px; /* alinhamento vertical minusculo, era 5px */
+	padding-left: 210px;	/* alinhamento horinzontal minusculo */
+}
+
+.content-contact, p{  /* foi chamado para dar espaçamento igual ao campo do formulario  */
+	margin-bottom: 20px; /* lembrar que cometi um erro usando , p... esqueci que vai pegar todos os elementos p, porem neste caso não afetou o restante do codigo*/
+}
+								/* parte 02*/
+/*.channel-position-button{
+	border: #ddd;
+} */
+
+.channel-position-button li{  /* usado para tirar o estilo da lista*/
+	list-style: none;
+}
+
+.channel-button{
+	height: 40px;
+	margin-bottom: 10px;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	width: 100%;
+	border: solid 2px rgb(255, 255, 255);
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.channel-button:hover{
+	background-color: black;
+	color: white;
+}
+
+.atendance{
+	text-align: center;
+	margin-top: 20px;
+	border-top: solid white 1px;
+	border-bottom: solid white 1px;
+}
+
+#t-a{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: rgb(255, 255, 255);
+}
+
+#p-a{
+	color: #c5c1c1;
+}
+
+.contact-number{
+	padding-top: 10px;
+	float: left;
+	font-size: 22px;
+}
+
+#t-c{
+	margin-bottom: 5px;
+}
+
+#p-c{
+	color: #c5c1c1;
+	font-weight: bold;
+}
+
+
+
+
+						/* Responsividade (Não está completa ainda)*/
+
+@media screen and (max-width: 1024px ){
+
+	header{
+		height: calc( 50vh - 150px); /*44 */
+	}
+
+	header nav{                  
+		display: flex;
+		justify-content: space-around;
+		padding-top: 30px; 
+		justify-items: center;
+	    align-items: center;  
+	}
+	
+	header nav p {	
+		margin-left: 90px;
+	}
+	
+	#logo{
+		font-size: 29px;
+		font-weight: bold;
+		padding-right: 50px;
+		padding-top: 15px;
+	}
+	
+	header nav ul{
+		padding-left: 5px;
+		list-style: none;
+		display: flex;
+	}
+	
+	header nav ul li{
+		margin: 20px 25px ; 
+		color: white; 
+		font-weight: bold;
+		font-size: 18px;
+		flex-shrink: 1 ;
+	}
+
+	.contact{
+		width: 100%;   
+		max-width: 380px;  
+		margin-right: 100px;                      
+	}
+	
+	.top-contact{ 
+		text-align: center; 
+		margin-bottom: 20px;
+	}
+	
+	#title-contact{  
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		font-size: 28px;
+	}
+	
+	label{
+		padding-right: 8px;
+	}
+	
+	input{
+		height: 40px;
+		width: 100%;
+	}
+	
+	.button{
+		margin-bottom: 100px;
+		border: solid 1px;
+		border-radius: 10px;
+		font-size: 16px;
+		font-weight: bold;
+		cursor: pointer;
+	}
+
+	.content-contact{
+		padding-top: 8px; 
+		padding-left: 10px;	
+	}
+}
+
+@media screen and (max-width: 768px ){
+
+	header{
+		height: calc( 60vh - 150px); /*44 */
+	}
+
+	header nav{                  
+		display: flex;
+		justify-content: space-around;
+		padding-top: 30px; 
+		justify-items: center;
+	    align-items: center;  
+	}
+	
+	header nav p {	
+		margin-left: 90px;
+	}
+	
+	#logo{
+		font-size: 29px;
+		font-weight: bold;
+		padding-right: 50px;
+		padding-top: 15px;
+	}
+	
+	header nav ul{
+		padding-left: 5px;
+		list-style: none;
+		display: flex;
+	}
+	
+	header nav ul li{
+		margin: 20px 25px ; 
+		color: white; 
+		font-weight: bold;
+		font-size: 18px;
+		flex-shrink: 1 ;
+	}
+
+	.content{
+		display: flex;   													 
+		justify-content: left;                      
+		padding-left: 50px;                         
+	}
+	
+	.contact{
+		width: 100%;   
+		max-width: 380px;  
+		margin-right: 100px;    
+		margin-right: 100px;                  
+	}
+	
+	.top-contact{ 
+		text-align: center; 
+		margin-bottom: 20px;
+	}
+	
+	#title-contact{  
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		font-size: 28px;
+	}
+	
+	label{
+		padding-right: 80px;
+	}
+	
+	input{
+		height: 40px;
+		width: 100%;
+	}
+
+	.content-contact{
+		padding-top: 8px; 
+	    padding-left: 10px;	
+		padding-right: 50px;
+	}
+}

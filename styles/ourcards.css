@@ -1,0 +1,306 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: Arial;
+	color: white;
+	background-color:black;
+}
+
+header{
+    height: calc( 42vh - 150px);
+}
+
+header nav{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 29px; 
+}
+
+header nav p {	
+	margin-left: 81px;
+    
+}
+
+header nav p a {
+    text-decoration: none;
+   color: white; 
+}
+
+#logo{
+	font-size: 38px;
+	font-weight: bold;
+	padding-right: 90px;
+}
+
+header nav ul{
+	padding-left: 415px;
+	list-style: none;
+	display: flex;
+}
+
+header nav ul li{
+	margin: 21px 29px ; 
+	color: white; 
+	font-weight: bold;
+	font-size: 18px;;
+}
+
+li a{
+	text-decoration: none;
+	color: white;
+}
+
+
+h1{                 /* Titulo dos cards */
+	margin-bottom: 70px;
+	text-align: center;
+}
+								
+article{   /* Pai do card (container) */
+	display: flex; 
+	justify-content: space-evenly;
+	align-items: center;   
+	width: 100%;  
+	height: 50vh; 
+	margin-bottom: 100px;  
+}
+
+.card{
+	padding: 25px;   	
+	width: 440px;
+	background: white;
+	color: black;
+	border: solid 2px rgb(0, 0, 0);
+	border-radius: 25px;
+	flex-shrink: 0;  
+}
+
+.topcard{
+	margin-bottom: 20px;
+}
+
+h2{  							/* titulo do card black */
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+#text-I{
+	font-size: 18px;	
+}
+
+#mediacard-I{
+	background: url(../img/Card-Black.png) center/cover;
+	height: 180px;
+	width: 100%;
+}
+
+.bottomCard{
+	margin-top: 20px;
+	text-align: center;
+}
+
+#money-I{
+	font-size: 19px;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+#button-I{
+	font-size: 18px;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	background: black;
+	font-size: 15px;
+	width: 150px;
+	height: 40px;
+	padding: 10px;
+	border: solid 2px black;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+#button-I:hover{
+	background: white;
+	color: black;
+}
+
+		/* SEGUNDO CARD */
+
+#silver{
+	color: rgba(82, 82, 82, 0.788);
+}
+
+#text-II{
+	font-size: 18px;	
+}
+
+#mediacard-II{
+	background: url(../img/Card-Silver.jpg) center/cover;
+	height: 180px;
+	width: 100%;
+}
+
+#money-II{
+	color: rgba(82, 82, 82, 0.877);
+	font-size: 19px;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+
+#button-II{
+	font-size: 18px;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	font-size: 15px;
+	background: rgba(116, 116, 116, 0.63);;
+	width: 150px;
+	height: 40px;
+	padding: 10px;
+	border: solid 2px black;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+#button-II:hover{
+
+	background: white;
+	color: rgba(82, 82, 82, 0.788);
+}
+
+@media screen and (max-width: 1024px ){
+
+	header{
+		height: calc( 50vh - 150px); 
+	}
+	
+	header nav{
+		display: flex;
+		justify-content: space-around;
+		padding-top: 30px; 
+		justify-items: center;
+	    align-items: center;  
+	}
+	
+	#logo{
+		font-size: 30px;
+		font-weight: bold;
+		padding-right: 50px;
+	}
+	
+	header nav ul{
+		padding-left: 0px;
+		list-style: none;
+		display: flex;
+	}
+	
+	header nav ul li{
+		margin: 20px 25px ; 
+		color: white; 
+		font-weight: bold;
+		font-size: 18px;;
+	}
+
+	h1{                 /* Titulo dos cards */
+		margin-bottom: 100px;
+		text-align: center;
+	}
+									
+	article{   /* Pai do card (container) */
+		display: flex; 
+		justify-content: space-evenly;
+		align-items: center;   
+		width: 100%;  
+		height: 60vh; 
+		margin-bottom: 200px;  
+	}
+	
+	.card{
+		padding: 20px;   	
+		width: 350px;
+		background: white;
+		color: black;
+		border: solid 2px rgb(0, 0, 0);
+		border-radius: 25px;
+		flex-shrink: 0;  
+	}
+
+
+
+
+
+
+							/* Responsividade (Não está completa ainda)*/
+
+
+
+
+
+							
+
+	@media screen and (max-width: 425px) {
+
+		header{
+			height: calc( 50vh - 150px); 
+		}
+		
+		header nav{
+			display: flex;
+			justify-content: space-around;
+			padding-top: 50px; 
+			justify-items: center;
+			align-items: center; 
+		}
+		
+		#logo{
+			font-size: 20px;
+			font-weight: bold;
+			padding-right: 50px;
+		}
+		
+		header nav ul{
+			padding-left: 0px;
+			list-style: none;
+			display: flex;
+			flex-shrink: 0;
+		}
+		
+		header nav ul li{
+			margin: 20px 15px ; 
+			color: white; 
+			font-weight: bold;
+			font-size: 12px;;
+		}
+	
+		h1{                 /* Titulo dos cards */
+			margin-bottom: 80px;
+			text-align: center;
+			padding-left: 50px;
+		}
+										
+		article{   /* Pai do card (container) */
+			display: flex; 
+			justify-content: space-evenly;
+			align-items: center;   
+			width: 500px;  
+			height: 70vh; 
+			margin-bottom: 200px;  
+		}
+		
+		.card{
+			padding: 20px;   	
+			width: 350px;
+			background: white;
+			color: black;
+			border: solid 2px rgb(0, 0, 0);
+			border-radius: 25px;
+			flex-shrink: 1;  
+		}
+	
+	}
+}
+								

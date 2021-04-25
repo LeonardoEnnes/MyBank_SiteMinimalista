@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contact Us | My Bank</title> 
+    <link rel="icon" href="./img/bankk.jpg" type="image/png"> 
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./styles/contact.css'>
+    
+</head>             <!-- fazer responsividade -->
+<body>
+    
+    <header>  
+        <nav>  
+            <p id="logo"> <a href="./index.html"> My Bank </a> </p>
+            <ul> 
+                <li> <a href="./index.html"> Home </a> </li>
+                <li> <a href="./ourcards.html"> Our Cards  </a> </li>
+                <li> <a href="./finance.html"> Finance    </a> </li>
+                <li> <a href="./contact.html"> Contact Us </a> </li>
+                
+            </ul>         <br>	
+        </nav>
+    </header>
+
+        <section class="content"> 
+                <div class="contact">  
+                    <div class="top-contact"> 
+                        <h1 id="title-contact"> Contact us </h1>
+                        <p id="text-contact"> Fill out the support form below </p>
+                    </div>
+                        <form class="form" method="POST">
+                            <div class="campo">
+                                <label for="nome"> <strong> Name: </strong> </label>
+                                <input type="text" name="nome" id="nome" required placeholder="Name">
+                            </div>
+
+                            <div class="campo"> 
+                                <label for="email"> <strong> Email: </strong> </label>
+                                <input type="Email" name="email" id="email" required placeholder="E-mail">
+                            </div>  
+
+                            <div class="campo"> 
+                                <label for="phone"> <strong> Phone: </strong> </label>  <!-- Fazer com que seja um campo para telefone futuramente...-->
+                                <input type="tel" name="number" id="number" required placeholder="Phone">
+                            </div>  
+
+                            <div class="campo">
+                                <textarea class="areatext" name="mensagem" placeholder="Digite sua mensagem"> </textarea>
+                            </div>
+
+                            <div class="position-button"> 
+                            <input type="submit" value="Send" class="button">
+                            </div>
+                        </form>
+                </div>
+
+                <article class="content-contact">     
+                    <h2> Meet other channels </h2>
+                    <p> Access below </p>
+                    <ul class="channel-position-button"> 
+                       <li>  <button class="channel-button"> Ombudsman  </button> </li>
+                       <li>  <button class="channel-button"> Attendance </button> </li>
+                       <li>  <button class="channel-button"> Work with us </button> </li>
+                    </ul>
+
+                        <div class="atendance">
+                            <h3 id="t-a"> Opening Hours </h3> 
+                            <p id="p-a"> Monday to Friday, from 10am to 10pm. </p>
+                        </div>
+
+                        <div class="contact-number"> 
+                            <h4 id="t-c">  Call Us  </h4>
+                            <p id="p-c"> 0700.330.5600</p>
+                        </div>
+                    
+                </article>
+
+        </section>
+
+</body>
+</html>
